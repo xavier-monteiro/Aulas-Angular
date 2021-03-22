@@ -1,0 +1,10 @@
+<p>ficha-animal works!</p>
+
+<select [(ngModel)]="especie" #referenciaPorEsteSelect>
+  <option >Cão</option>
+  <option >Gato</option>
+  <option >Foninha</option>
+  <option >Hamster</option>
+</select>
+
+<app-escolhe-animal [animal_atual] ="referenciaPorEsteSelect.value"></app-escolhe-animal>

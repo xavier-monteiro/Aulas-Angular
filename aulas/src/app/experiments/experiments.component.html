@@ -4,3 +4,11 @@
 
 //Focus event
 <input (focus)="isfocus()">
+
+<h2>Diretiva NGfor</h2>
+<div *ngFor="let animal of arrayAnimais">
+    <h4>{{animal}}</h4>
+
+</div>
+
+<app-exp2 [valorRecebido]='name'></app-exp2>

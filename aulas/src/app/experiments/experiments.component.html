@@ -2,13 +2,21 @@
 <input type="text" (input)="changeName($event)" value={{name}}>
 <p>Olá {{name}}</p>
 
+<h1 *ngIf="name=='Moises'">Oh raio es tu pa</h1>
+
 //Focus event
 <input (focus)="isfocus()">
 
 <h2>Diretiva NGfor</h2>
-<div *ngFor="let animal of arrayAnimais">
-    <h4>{{animal}}</h4>
+<div *ngFor="let animal of arrayAnimais; let i = index">
+    <h4 [ngStyle]="{'color': i%2==0?'green':'red'}">{{animal}}</h4>
 
 </div>
 
-<app-exp2 [valorRecebido]='name'></app-exp2>
+
+
+<button [ngClass]="{'btn-danger': name==='Moises','btn-warning':name==='Xavi'}">Teste bootstrap</button>
+
+<p>Recebi do filho:  {{recebiDoFilho}}</p>
+
+<app-exp2 [valorRecebido]='name' (passaInfo)="recebi($event)"></app-exp2>

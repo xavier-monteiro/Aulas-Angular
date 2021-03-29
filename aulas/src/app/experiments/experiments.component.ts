@@ -27,4 +27,12 @@ export class ExperimentsComponent implements OnInit {
 
    arrayAnimais : Array<String> = ['cão','gato','doninha','hamster'];
 
+   recebiDoFilho : string ="";
+
+   recebi(ev:any)
+   {
+     console.log("Recebi: "+ev);
+     this.recebiDoFilho = ev;
+   }
+
 }

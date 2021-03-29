@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+
 
 @Component({
   selector: 'app-exp2',
@@ -7,10 +8,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class Exp2Component implements OnInit {
 
+  @Output() passaInfo = new EventEmitter();
   constructor() { }
 
   @Input() valorRecebido: string="";
   ngOnInit(): void {
+  }
+  evHappen(){
+    this.passaInfo.emit("algo");
   }
 
 }

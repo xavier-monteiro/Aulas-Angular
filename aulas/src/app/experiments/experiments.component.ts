@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { Preferencias } from '../classes/preferencias';
 
 @Component({
   selector: 'app-experiments',
@@ -34,5 +35,7 @@ export class ExperimentsComponent implements OnInit {
      console.log("Recebi: "+ev);
      this.recebiDoFilho = ev;
    }
+
+   defenicao : Preferencias = new Preferencias("blue","white");
 
 }

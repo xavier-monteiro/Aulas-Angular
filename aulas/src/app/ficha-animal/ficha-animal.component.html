@@ -8,3 +8,9 @@
 </select>
 
 <app-escolhe-animal [animal_atual] ="referenciaPorEsteSelect.value"></app-escolhe-animal>
+
+<div *ngFor="let animal of animaisRegistados">
+
+<app-animal-reader [animalSerLido]='animal'></app-animal-reader>
+
+</div>

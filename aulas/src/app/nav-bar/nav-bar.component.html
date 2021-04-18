@@ -1,13 +1,18 @@
-<nav>
-<ul>
+<nav  class="navbar navbar-expand-lg bg-dark navbar-dark justify-content-between">
 
-<li><a [routerLink]="['/home']" routerLinkActive="active" >home</a></li>
-<li><a [routerLink]="['/calculator']" routerLinkActive="active" >calculadora</a></li>
-<li><a [routerLink]="['/readMeGen']" routerLinkActive="active" >readMeGen</a></li>
-<li><a [routerLink]="['/experiments']" routerLinkActive="active" >experiments</a></li>
-<li><a [routerLink]="['/evAndRef']" routerLinkActive="active" >events</a></li>
-<li><a [routerLink]="['/fichaAnimal']" routerLinkActive="active" >ficha animal</a></li>
+
+<ul class="navbar-nav" >
+  <a class="navbar-brand" [routerLink]="['/home']" routerLinkActive="active">Aulas</a>
+<li class="nav-item" ><a class="nav-link" [routerLink]="['/home']" routerLinkActive="active">home</a></li>
+<li class="nav-item"  ><a class="nav-link" [routerLink]="['/calculator']" routerLinkActive="active">calculadora</a></li>
+<li class="nav-item" ><a class="nav-link" [routerLink]="['/readMeGen']" routerLinkActive="active">readMeGen</a></li>
+<li class="nav-item" ><a class="nav-link" [routerLink]="['/experiments']" routerLinkActive="active" >experiments</a></li>
+<li class="nav-item" ><a class="nav-link" [routerLink]="['/evAndRef']" routerLinkActive="active" >events</a></li>
+<li class="nav-item"><a class="nav-link" [routerLink]="['/fichaAnimal']" routerLinkActive="active" >ficha animal</a></li>
+
 
 </ul>
+
+
 
 </nav>
